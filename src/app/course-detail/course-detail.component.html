@@ -1,0 +1,10 @@
+
+<div class="screen-container">
+
+    <button class='button button-primary' (click)='LoginAsDave()'>Login As Dave</button>
+
+    <course-detail-header [course]="course$ | async" [lessons]="lessons$ | async"></course-detail-header>
+
+    <lessons-list [lessons]='lessons$ | async'></lessons-list>
+</div>
+
